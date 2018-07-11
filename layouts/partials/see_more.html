@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="icon icon-lg"><i class="{{ .Site.Params.see_more.icon }}"></i>
+                <div class="icon icon-lg{{ with .Site.Params.see_more.icon_div_class }} {{ . }}{{ end }}"><i class="{{ .Site.Params.see_more.icon }}"></i>
                 </div>
                 <h3 class="text-uppercase">{{ T "seeMoreTitle" }}</h3>
                 <p class="lead">{{ T "seeMoreSubTitle" }}</p>
