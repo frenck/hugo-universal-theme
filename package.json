@@ -8,6 +8,12 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "install_hugo": "brew update && brew install hugo"
+    "install_hugo": "brew update && brew install hugo",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.189.0"
   }
 }
